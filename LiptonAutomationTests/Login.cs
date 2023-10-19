@@ -30,7 +30,7 @@ namespace SauceDemoTests
             passwordInput.SendKeys("secret_sauce");
             loginButton.Click();
 
-            IWebElement productsHeader = driver.FindElement(By.ClassName("product_label"));
+            IWebElement productsHeader = driver.FindElement(By.ClassName("inventory_item_name"));
             Assert.IsTrue(productsHeader.Displayed, "Login failed.");
         }
 
