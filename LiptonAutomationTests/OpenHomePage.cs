@@ -2,7 +2,7 @@
 using OpenQA.Selenium;
 using TestLib;
 
-namespace LiptonAutomationTests
+namespace SauceDemoTests
 {
     [TestClass]
     public class OpenHomePage
@@ -19,10 +19,10 @@ namespace LiptonAutomationTests
         [TestMethod]
         public void ValidatePageToBeLoaded()
         {
-            driver.Navigate().GoToUrl(Constants.LiptonHomePage);
+            driver.Navigate().GoToUrl(Constants.HomePage);
 
             string pageTitle = driver.Title;
-            if (pageTitle.Contains("Lipton"))
+            if (pageTitle.Contains("Swag Labs"))
             {
                 Assert.IsTrue(true);
             }
