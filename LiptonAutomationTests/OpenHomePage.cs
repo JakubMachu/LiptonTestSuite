@@ -17,7 +17,7 @@ namespace SauceDemoTests
         }
 
         [TestMethod]
-        public void ValidatePageToBeLoaded()
+        public void LoadPage()
         {
             driver.Navigate().GoToUrl(Constants.HomePage);
 
